@@ -39,6 +39,17 @@
     width: 80%;
     max-width: 500px;
   }
+/* Caption for img*/
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
 
   /* Add Animation */
   .modal-content,
@@ -246,23 +257,30 @@
   <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
     <div class="w3-container w3-display-container w3-padding-16">
       <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
-      <a href="index.html"><img src="WEB1/ANHNEN/ava.jpg" alt="LOGO" width="100%"></a>
+      <a href="index.html"><img src="WEB1/ANHNEN/ava.jpg" alt="LOGO" width="130%"></a>
     </div>
     <div class="w3-padding-64 w3-large w3-text-gray" style="font-weight:bold">
-
       <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align">
-        Mẫu chữ <i class="fa fa-caret-down"></i>
+        COMBO <i class="fa fa-caret-down"></i>
       </a>
       <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+        <a href="#" class="w3-bar-item w3-button">Mua 1 tặng 1</a>
+        <a href="#" class="w3-bar-item w3-button">Couple</a>
+      </div>
+
+      <a onclick="myAccFunc1()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align">
+        Mẫu chữ <i class="fa fa-caret-down"></i>
+      </a>
+      <div id="demoAcc1" class="w3-bar-block w3-hide w3-padding-large w3-medium">
         <a href="#" class="w3-bar-item w3-button">Cầu vồng</a>
         <a href="#" class="w3-bar-item w3-button">Line</a>
         <a href="#" class="w3-bar-item w3-button">Xếp tầng</a>
       </div>
 
-      <a onclick="myAccFunc1()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align">
+      <a onclick="myAccFunc2()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align">
         Mẫu khung <i class="fa fa-caret-down"></i>
       </a>
-      <div id="demoAcc1" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <div id="demoAcc2" class="w3-bar-block w3-hide w3-padding-large w3-medium">
         <a href="#" class="w3-bar-item w3-button">Khung đơn</a>
         <a href="#" class="w3-bar-item w3-button">Khung nhiều</a>
       </div>
@@ -318,7 +336,16 @@
           <img src="WEB1/ANHNEN/4.jpg" style="width:100%">
 
         </div>
+        <div class="mySlides fade">
 
+          <img src="WEB1/ANHNEN/5.jpg" style="width:100%">
+
+        </div>
+        <div class="mySlides fade">
+
+          <img src="WEB1/ANHNEN/6.jpg" style="width:100%">
+
+        </div>
 
       </div>
 
@@ -365,8 +392,8 @@
       <div class="w3-col l3 s6">
         <div class="w3-container">
           <div class="w3-display-container">
-            <img id="img_01" alt=">DRAGON BALLZ" onclick="zoom_img(img_01)" src="WEB1/SALE/1.jpg" style="width:100%">
-            <span class="w3-tag w3-display-topleft">Sale</span>
+            <img id="img_01" alt="DRAGON BALLZ" onclick="zoom_img(img_01)" src="WEB1/SALE/1.jpg" style="width:100%">
+            <span class="w3-tag w3-display-topleft">New</span>
 
           </div>
           <p>DRAGON BALLZ<br><b>$24.99</b></p>
@@ -376,8 +403,8 @@
       <div class="w3-col l3 s6">
         <div class="w3-container">
           <div class="w3-display-container">
-            <img id="img_02" alt=">ONEPIECE" onclick="zoom_img(img_02)" src="WEB1/SALE/3.jpg" style="width:100%">
-            <span class="w3-tag w3-display-topleft">Sale</span>
+            <img id="img_02" alt="ONEPIECE" onclick="zoom_img(img_02)" src="WEB1/SALE/3.jpg" style="width:100%">
+            <span class="w3-tag w3-display-topleft">New</span>
           </div>
           <p>ONEPIECE<br><b>$34.99</b></p>
         </div>
@@ -386,8 +413,8 @@
       <div class="w3-col l3 s6">
         <div class="w3-container">
           <div class="w3-display-container">
-            <img id="img_03" alt=">DRAGON BALLZ" onclick="zoom_img(img_03)" src="WEB1/SALE/1.jpg" style="width:100%">
-            <span class="w3-tag w3-display-topleft">Sale</span>
+            <img id="img_03" alt="DRAGON BALLZ" onclick="zoom_img(img_03)" src="WEB1/SALE/1.jpg" style="width:100%">
+            <span class="w3-tag w3-display-topleft">New</span>
           </div>
           <p>DRAGON BALLZ<br><b>$21.99</b></p>
         </div>
@@ -396,8 +423,8 @@
       <div class="w3-col l3 s6">
         <div class="w3-container">
           <div class="w3-display-container">
-            <img id="img_04" alt=">ONEPIECE" onclick="zoom_img(img_04)" src="WEB1/SALE/3.jpg" style="width:100%">
-            <span class="w3-tag w3-display-topleft">Sale</span>
+            <img id="img_04" alt="ONEPIECE" onclick="zoom_img(img_04)" src="WEB1/SALE/3.jpg" style="width:100%">
+            <span class="w3-tag w3-display-topleft">New</span>
 
           </div>
           <p>ONEPIECE<br><b>$30.99</b></p>
@@ -408,8 +435,8 @@
       <div class="w3-col l3 s6">
         <div class="w3-container">
           <div class="w3-display-container">
-            <img id="img_05" alt=">DRAGON BALLZ" onclick="zoom_img(img_05)" src="WEB1/SALE/1.jpg" style="width:100%">
-            <span class="w3-tag w3-display-topleft">Sale</span>
+            <img id="img_05" alt="DRAGON BALLZ" onclick="zoom_img(img_05)" src="WEB1/SALE/1.jpg" style="width:100%">
+            <span class="w3-tag w3-display-topleft">New</span>
 
           </div>
           <p>DRAGON BALLZ<br><b>$24.99</b></p>
@@ -419,8 +446,8 @@
       <div class="w3-col l3 s6">
         <div class="w3-container">
           <div class="w3-display-container">
-            <img id="img_06" alt=">DRAGON BALLZ" onclick="zoom_img(img_06)" src="WEB1/SALE/1.jpg" style="width:100%">
-            <span class="w3-tag w3-display-topleft">Sale</span>
+            <img id="img_06" alt="DRAGON BALLZ" onclick="zoom_img(img_06)" src="WEB1/SALE/1.jpg" style="width:100%">
+            <span class="w3-tag w3-display-topleft">New</span>
 
           </div>
           <p>DRAGON BALLZ<br><b>$34.99</b></p>
@@ -430,8 +457,8 @@
       <div class="w3-col l3 s6">
         <div class="w3-container">
           <div class="w3-display-container">
-            <img id="img_07" alt=">DRAGON BALLZ" onclick="zoom_img(img_07)" src="WEB1/SALE/1.jpg" style="width:100%">
-            <span class="w3-tag w3-display-topleft">Sale</span>
+            <img id="img_07" alt="DRAGON BALLZ" onclick="zoom_img(img_07)" src="WEB1/SALE/1.jpg" style="width:100%">
+            <span class="w3-tag w3-display-topleft">New</span>
 
           </div>
           <p>DRAGON BALLZ<br><b>$21.99</b></p>
@@ -441,8 +468,8 @@
       <div class="w3-col l3 s6">
         <div class="w3-container">
           <div class="w3-display-container">
-            <img id="img_08" alt=">DRAGON BALLZ" onclick="zoom_img(img_08)" src="WEB1/SALE/1.jpg" style="width:100%">
-            <span class="w3-tag w3-display-topleft">Sale</span>
+            <img id="img_08" alt="DRAGON BALLZ" onclick="zoom_img(img_08)" src="WEB1/SALE/1.jpg" style="width:100%">
+            <span class="w3-tag w3-display-topleft">New</span>
 
           </div>
           <p>DRAGON BALLZ<br><b>$30.99</b></p>
@@ -452,19 +479,21 @@
 
     <!-- zoom function -->
     <!-- The Modal -->
-    <div id="myModal" class="modal" onclick="close_zoom(myModal)" > 
+    <div id="myModal" class="modal" onclick="close_zoom(myModal)">
       <span class="close" onclick="close_zoom(myModal)">&times;</span>
       <img class="modal-content" id="img01">
+      <div id="caption"></div>
     </div>
 
     <script>
       // Get the modal
-      
+
 
       // Get the image and insert it inside the modal - use its "alt" text as a caption
       function zoom_img(img_id) {
         var modal = document.getElementById("myModal");
         var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
         modal.style.display = "block";
         modalImg.src = img_id.src;
         captionText.innerHTML = img_id.alt;
@@ -473,7 +502,7 @@
       // Get the <span> element that closes the modal
       var span = document.getElementsByClassName("close")[0];
       // When the user clicks on <span> (x), close the modal
-      function close_zoom (id_modal) {
+      function close_zoom(id_modal) {
         id_modal.style.display = "none";
       }
     </script>
@@ -492,6 +521,15 @@
 
       function myAccFunc1() {
         var x = document.getElementById("demoAcc1");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+
+      function myAccFunc2() {
+        var x = document.getElementById("demoAcc2");
         if (x.className.indexOf("w3-show") == -1) {
           x.className += " w3-show";
         } else {
