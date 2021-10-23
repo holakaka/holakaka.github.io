@@ -39,7 +39,8 @@
     width: 80%;
     max-width: 500px;
   }
-/* Caption for img*/
+
+  /* Caption for img*/
   #caption {
     margin: auto;
     display: block;
@@ -281,7 +282,7 @@
         Mẫu khung <i class="fa fa-caret-down"></i>
       </a>
       <div id="demoAcc2" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-        <a href="basicframe.html" class="w3-bar-item w3-button">Khung đơn</a>
+        <a href="#" class="w3-bar-item w3-button">Khung đơn</a>
         <a href="#" class="w3-bar-item w3-button">Khung nhiều</a>
       </div>
 
@@ -309,81 +310,15 @@
     <header class="w3-container w3-xlarge">
       <br>
     </header>
-
     <!-- Image header -->
     <div class="w3-display-container w3-container">
       <div class="slideshow-container">
-
         <div class="mySlides fade">
-
-          <img src="WEB1/ANHNEN/1.jpg" style="width:100%">
-
+          <img src="WEB1/BASICFRAME/POSTER.jpg" style="width:100%">
         </div>
-
-        <div class="mySlides fade">
-
-          <img src="WEB1/ANHNEN/2.jpg" style="width:100%">
-
-        </div>
-
-        <div class="mySlides fade">
-
-          <img src="WEB1/ANHNEN/3.jpg" style="width:100%">
-
-        </div>
-        <div class="mySlides fade">
-
-          <img src="WEB1/ANHNEN/4.jpg" style="width:100%">
-
-        </div>
-        <div class="mySlides fade">
-
-          <img src="WEB1/ANHNEN/5.jpg" style="width:100%">
-
-        </div>
-        <div class="mySlides fade">
-
-          <img src="WEB1/ANHNEN/6.jpg" style="width:100%">
-
-        </div>
-
       </div>
-
       <br>
-
-      <div style="text-align:center">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-      </div>
-
     </div>
-
-    <script>
-      var slideIndex = 0;
-      showSlides();
-
-      function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) { slideIndex = 1 }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-        setTimeout(showSlides, 2000); // Change image every 2 seconds
-      }
-    </script>
 
     <!-- Product grid -->
 
@@ -392,42 +327,42 @@
       <div class="w3-col l3 s6">
         <div class="w3-container">
           <div class="w3-display-container">
-            <img id="img_01" alt="DRAGON BALLZ" onclick="zoom_img(img_01)" src="WEB1/SALE/1.jpg" style="width:100%">
+            <img id="img_01" alt="KHUNG MÂY HỒNG" onclick="zoom_img(img_01)" src="WEB1/BASICFRAME/1.jpg" style="width:100%">
             <span class="w3-tag w3-display-topleft">New</span>
 
           </div>
-          <p>DRAGON BALLZ<br><b>$24.99</b></p>
+          <p>KHUNG MÂY HỒNG<br><b>69.000</b></p>
         </div>
       </div>
 
       <div class="w3-col l3 s6">
         <div class="w3-container">
           <div class="w3-display-container">
-            <img id="img_02" alt="ONEPIECE" onclick="zoom_img(img_02)" src="WEB1/SALE/3.jpg" style="width:100%">
+            <img id="img_02" alt="KHUNG BƯỚM XANH" onclick="zoom_img(img_02)" src="WEB1/BASICFRAME/2.jpg" style="width:100%">
             <span class="w3-tag w3-display-topleft">New</span>
           </div>
-          <p>ONEPIECE<br><b>$34.99</b></p>
+          <p>KHUNG BƯỚM XANH<br><b>69.000</b></p>
         </div>
       </div>
 
       <div class="w3-col l3 s6">
         <div class="w3-container">
           <div class="w3-display-container">
-            <img id="img_03" alt="DRAGON BALLZ" onclick="zoom_img(img_03)" src="WEB1/SALE/1.jpg" style="width:100%">
+            <img id="img_03" alt="KHUNG CẦU VỒNG" onclick="zoom_img(img_03)" src="WEB1/BASICFRAME/3.jpg" style="width:100%">
             <span class="w3-tag w3-display-topleft">New</span>
           </div>
-          <p>DRAGON BALLZ<br><b>$21.99</b></p>
+          <p>KHUNG CẦU VỒNG<br><b>69.000</b></p>
         </div>
       </div>
 
       <div class="w3-col l3 s6">
         <div class="w3-container">
           <div class="w3-display-container">
-            <img id="img_04" alt="ONEPIECE" onclick="zoom_img(img_04)" src="WEB1/SALE/3.jpg" style="width:100%">
+            <img id="img_04" alt="KHUNG GIẤY BÁO" onclick="zoom_img(img_04)" src="WEB1/BASICFRAME/4.jpg" style="width:100%">
             <span class="w3-tag w3-display-topleft">New</span>
 
           </div>
-          <p>ONEPIECE<br><b>$30.99</b></p>
+          <p>KHUNG GIẤY BÁO<br><b>69.000</b></p>
         </div>
       </div>
     </div>
@@ -435,45 +370,32 @@
       <div class="w3-col l3 s6">
         <div class="w3-container">
           <div class="w3-display-container">
-            <img id="img_05" alt="DRAGON BALLZ" onclick="zoom_img(img_05)" src="WEB1/SALE/1.jpg" style="width:100%">
+            <img id="img_05" alt="KHUNG BẦU TRỜI HOÀNG HÔN" onclick="zoom_img(img_05)" src="WEB1/BASICFRAME/5.jpg" style="width:100%">
             <span class="w3-tag w3-display-topleft">New</span>
 
           </div>
-          <p>DRAGON BALLZ<br><b>$24.99</b></p>
+          <p>KHUNG BẦU TRỜI HOÀNG HÔN<br><b>69.000</b></p>
         </div>
       </div>
 
       <div class="w3-col l3 s6">
         <div class="w3-container">
           <div class="w3-display-container">
-            <img id="img_06" alt="DRAGON BALLZ" onclick="zoom_img(img_06)" src="WEB1/SALE/1.jpg" style="width:100%">
+            <img id="img_06" alt="KHUNG SAO ĐÊM" onclick="zoom_img(img_06)" src="WEB1/BASICFRAME/6.jpg" style="width:100%">
             <span class="w3-tag w3-display-topleft">New</span>
 
           </div>
-          <p>DRAGON BALLZ<br><b>$34.99</b></p>
+          <p>KHUNG SAO ĐÊM<br><b>69.000</b></p>
         </div>
       </div>
 
       <div class="w3-col l3 s6">
         <div class="w3-container">
-          <div class="w3-display-container">
-            <img id="img_07" alt="DRAGON BALLZ" onclick="zoom_img(img_07)" src="WEB1/SALE/1.jpg" style="width:100%">
-            <span class="w3-tag w3-display-topleft">New</span>
-
-          </div>
-          <p>DRAGON BALLZ<br><b>$21.99</b></p>
         </div>
       </div>
 
       <div class="w3-col l3 s6">
         <div class="w3-container">
-          <div class="w3-display-container">
-            <img id="img_08" alt="DRAGON BALLZ" onclick="zoom_img(img_08)" src="WEB1/SALE/1.jpg" style="width:100%">
-            <span class="w3-tag w3-display-topleft">New</span>
-
-          </div>
-          <p>DRAGON BALLZ<br><b>$30.99</b></p>
-        </div>
       </div>
     </div>
 
